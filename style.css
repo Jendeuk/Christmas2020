@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color: #FFC8C8;
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div.logo{
+    width: 170px;
+    height: 59px;
+    background-color: #FF4949;
+    margin-left: 25px;
+}
+header > nav{
+    margin-right: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+header > nav > a{
+    color: #F02626;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 35px;
+}
+header > nav > a:visited{
+    color: #F02626;
+}
+main > div.splash{
+    height: calc(100vh - 89px );
+    background-color: #FF7171;
+    transition-duration: 1s;
+}
+div.splash > div.text{
+    font-family: 'Single Day', cursive;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 95px;
+    transform: translateY(-50%);
+}
+div.splash > div.text > h1{
+    font-size: 65px;
+}
+div.splash > div.text > h1::after {
+    content: "Christmas 2020 website!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: -1;
+    -webkit-text-stroke: 25px #FFFFFF;
+}
+div.splash > div.text > p{
+    width: 60%;
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+main > div.box{
+    margin: 30px;
+    background-color: #f4f4f4;
+    padding: 30px;
+    display: flex;
+}
+
+main > div.box > div{
+    width: 60%;
+    font-family: 'Single Day', cursive;
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+main > div.box > img{
+    width: 40%;
+}
+
+div.box.flipped > div{
+    order: 2;
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+main > div.box.small {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main > div.box.small > img{
+    width: 100%;
+}
+h1.titletext{
+    font-family: 'Single Day', cursive;
+    text-align: center;
+}
+footer{
+    background-color:  #FFC8C8;
+    font-family: 'Single Day', cursive;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
