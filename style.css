@@ -49,7 +49,7 @@ div.splash > div.text > h1{
     font-size: 65px;
 }
 div.splash > div.text > h1::after {
-    content: "Christmas 2020 website!";
+    content: "Christmas 2020";
     position: absolute;
     top: 0;
     left: 0;
